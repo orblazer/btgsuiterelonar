@@ -9,7 +9,7 @@
 /* 60 */     super(name);
 /* 61 */     this.value = value;
 /*    */   }
-/*    */ 
+/*    */ sdsd
 /*    */   public Long getValue()
 /*    */   {
 /* 66 */     return Long.valueOf(this.value);
