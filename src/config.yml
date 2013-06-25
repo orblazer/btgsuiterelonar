@@ -1,0 +1,12 @@
+# main config
+sql:
+  enable: false
+  host: localhost
+  port: '3306'
+  user: root
+  pass: ''
+  table: minecraft
+
+configs:
+  # EN or FR
+  lang: FR

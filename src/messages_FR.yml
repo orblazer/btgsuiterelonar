@@ -1,0 +1,59 @@
+# NE PAS TOUCHER
+LANG: FR
+
+# Changeable a partir dici
+# Couleur: &4 (rouge fonce), &c (rouge), &6 (or), &e (jaune), &2 (vert fonce), &a (vert), &b (aqua), &3 (cyan),
+#        &1 (bleu fonce), &9 (bleu), &d (rose), &5 (violet), &f (blanc), &7 (gris), &8 (gris fonce), &0 (noir)
+# Variable: <player>, <args>, <ammount>, <newammount>, <currency>, <id>, <br>, <min>, <max>, <x>, <y>, <z>
+ERROR: '&4[Erreur]'
+BUG: '&4des bug sont present :('
+NOPERMISSION: '&cvous navez pas la permission'
+DB_DISABLED: '&cLa DB est desactivee'
+NOPLAYER: '&cLe joueur est introuvable'
+NOCONSOLE: '&cImpossible depuis la console'
+NUMBER: '&cMerci de tapez un nombre entre <min> et <max>'
+
+JOIN: '&b<player> &7ses connecte'
+LEAVE: '&b<player> &7ses deconecte'
+KICK: '&b<player> &7ses fait kick'
+
+CHAT_NOLINK: '&cLes lien sont interdit !<br>Les admin ont recus le lien est lenverront si il veulent et si il est sans danger !'
+
+ACCOUNT_CREATE: '&bVotre compte est cree'
+ACCOUNT_CREATE_TARGET: '&aLe compte de &b<player> &aest cree'
+ACCOUNT_CREATEBY: '&aVotre compte a ete cree par &b<player>'
+ACCOUNT_DELETE: '&bVotre compte est supprime'
+ACCOUNT_DELETE_TARGET: '&aLe compte de &b<player> &aest supprime'
+ACCOUNT_DELETEBY: '&aLe compte a ete supprimer par &b<player>'
+ACCOUNT_AMMOUNT: '&aVous avez &b<ammount><currency> &asur votre compte'
+ACCOUNT_EXIST: '&cVotre compte existe deja'
+ACCOUNT_EXIST_TARGET: '&2Le compte de &b<player> &2existe deja'
+ACCOUNT_NOEXIST: '&2Vous navez pas de compte'
+ACCOUNT_NOEXIST_TARGET: '&b<player> &2na pas de compte'
+ECONOMY_ENOUGH: '&cVous navez pas assez dargent :('
+ECONOMY_ENOUGH_TARGET: '&cNas pas assez dargent :('
+ECONOMY_REMOVEMONEY_TARGET: '&9<player> &aa bien perdu les &b<ammount><currency><br>&aIl lui reste plus que &b<newammount><currency>'
+ECONOMY_REMOVEMONEY: '&9<player> &avous a retirer &b<ammount><currency><br>%ACCOUNT_AMMOUNT%'
+ECONOMY_ADDMONEY: '&9<player> &aa bien gagne &b<ammount><currency><br>&aIl a desormais &b<newammount><currency>'
+ECONOMY_ADDMONEY_TARGET: '&9<player> &avous a donne &b<ammount><currency><br>%ACCOUNT_AMMOUNT%'
+ECONOMY_PAY: '&9<player> &aa bien recu &b<ammount><currency><br>&aIl vous reste plus que &b<newammount><currency>'
+ECONOMY_PAY_TARGET: '&9<player> &avous a envoye &b<ammount><currency><br>%ACCOUNT_AMMOUNT%'
+ECONOMY_INFO_TITLE: '&7Info du compte de &a<player> :'
+ECONOMY_INFO_ID: '&aID du compte : <id>'
+ECONOMY_INFO_AMMOUNT: '&aArgent : <ammount><currency>'
+
+VANISH_NO: '&aVous nete plus en vanish !'
+VANISH_YES: '&aVous ete desormais en vanish !'
+
+SCOREBOARD_TITLE: '&bInfo :'
+SCOREBOARD_ONLINE: '&6En ligne :'
+SCOREBOARD_ECONOMY: '&eEconomie :'
+SCOREBOARD_IDACCOUNT: '&aID du compte : <id>'
+SCOREBOARD_AMMOUNT: '&aArgent : <ammount><currency>'
+
+SIGN_NOSERV: '&cVous devez specifier un serveur'
+SIGN_CREATE: '&aLe paneaux pour le serveur &3<server> &aest fait'
+SIGN_CREATE_PORTAL: '&aLe paneaux du portail vers le serveur &3<server> &aest fait'
+
+COMMAND_ERROR: '&cUtilisation: <cmd> <args>'
+COMMAND_SPAWN: '&7Le spawn est definie en x:<x>, y:<y>, z:<z>'

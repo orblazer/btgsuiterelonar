@@ -1,0 +1,16 @@
+# DONT CHANGE THIS
+LANG: EN
+
+# CHANGE FROM HERE
+# Color: &4 (dark red), &c (red), &6 (gold), &e (yellow), &2 (dark green), &a (green), &b (aqua), &3 (cyan),
+#        &1 (dark blue), &9 (blue), &d (pink), &5 (purple), &f (white), &7 (gray), &8 (dark gray), &0 (black)
+# Variable: <player>, <args>, <ammount>, <newammount>, <currency>, <id>, <br>, <min>, <max>, <x>, <y>, <z>
+ERROR: '&4[ERROR]'
+NOPERMISSION: '&cYou dont have a permission'
+DB_DISABLED: '&cA DB is disabled'
+NOPLAYER: '&cA player is not found'
+NOCONSOLE: '&cNot through the console'
+
+NOBUILD: '&cNo build found'
+
+COMMAND_ERROR: '&cUsage: <cmd> <args>'

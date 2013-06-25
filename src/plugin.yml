@@ -1,0 +1,14 @@
+name: BTGSuiteRelonar
+description: plugin for Relonar server
+author: orblazer, MaitreKierra, Tsunagames
+website: http://www.becomethegamer.com/
+
+version: 1.0
+mcversion: 1.5.2
+
+main: fr.orblazer.btgsuitelobby.Main
+depend: [BTGSuiteCore]
+commands:
+  btgbuild:
+    description: Main command
+    aliases: [btbuild, bgbuild]
