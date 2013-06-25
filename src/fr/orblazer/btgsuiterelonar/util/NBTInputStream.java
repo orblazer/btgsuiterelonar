@@ -76,7 +76,7 @@ public final class NBTInputStream
 				int childType = this.is.readByte();
 				length = this.is.readInt();
 
-				List tagList = new ArrayList();
+				List<Tag> tagList = new ArrayList<Tag>();
 				for (int i = 0; i < length; i++) {
 					Tag tag = readTagPayload(childType, "", depth + 1);
 					if ((tag instanceof EndTag))
@@ -87,7 +87,7 @@ public final class NBTInputStream
 
 				return new ListTag(name, NBTUtils.getTypeClass(childType), tagList);
 			case 10:
-				Map tagMap = new HashMap();
+				Map<String, Tag> tagMap = new HashMap<String, Tag>();
 				while (true) {
 					Tag tag = readTag(depth + 1);
 					if ((tag instanceof EndTag))

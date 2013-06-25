@@ -6,7 +6,7 @@ website: http://www.becomethegamer.com/
 version: 1.0
 mcversion: 1.5.2
 
-main: fr.orblazer.btgsuitelobby.Main
+main: fr.orblazer.btgsuiterelonar.Main
 depend: [BTGSuiteCore]
 commands:
   btgbuild:

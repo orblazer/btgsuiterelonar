@@ -1,50 +1,40 @@
-/*     */ package com.sk89q.jnbt;
-/*     */ 
-/*     */ import java.util.Collections;
-/*     */ import java.util.List;
-/*     */ 
-/*     */ public final class ListTag extends Tag
-/*     */ {
-/*     */   private final Class<? extends Tag> type;
-/*     */   private final List<Tag> value;
-/*     */ 
-/*     */   public ListTag(String name, Class<? extends Tag> type, List<? extends Tag> value)
-/*     */   {
-/*  70 */     super(name);
-/*  71 */     this.type = type;
-/*  72 */     this.value = Collections.unmodifiableList(value);
-/*     */   }
-/*     */ 
-/*     */   public Class<? extends Tag> getType()
-/*     */   {
-/*  81 */     return this.type;
-/*     */   }
-/*     */ 
-/*     */   public List<Tag> getValue()
-/*     */   {
-/*  86 */     return this.value;
-/*     */   }
-/*     */ 
-/*     */   public String toString()
-/*     */   {
-/*  91 */     String name = getName();
-/*  92 */     String append = "";
-/*  93 */     if ((name != null) && (!name.equals(""))) {
-/*  94 */       append = new StringBuilder().append("(\"").append(getName()).append("\")").toString();
-/*     */     }
-/*  96 */     StringBuilder bldr = new StringBuilder();
-/*  97 */     bldr.append(new StringBuilder().append("TAG_List").append(append).append(": ").append(this.value.size()).append(" entries of type ").append(NBTUtils.getTypeName(this.type)).append("\r\n{\r\n").toString());
-/*     */ 
-/* 100 */     for (Tag t : this.value) {
-/* 101 */       bldr.append(new StringBuilder().append("   ").append(t.toString().replaceAll("\r\n", "\r\n   ")).append("\r\n").toString());
-/*     */     }
-/*     */ 
-/* 104 */     bldr.append("}");
-/* 105 */     return bldr.toString();
-/*     */   }
-/*     */ }
+package fr.orblazer.btgsuiterelonar.util;
 
-/* Location:           C:\Users\orblazer\Desktop\Mes documents\Minecraft\serveur\Azael PvP\plugins\WorldEdit.jar
- * Qualified Name:     com.sk89q.jnbt.ListTag
- * JD-Core Version:    0.6.2
- */
+import java.util.Collections;
+import java.util.List;
+
+public final class ListTag extends Tag {
+	private final Class<? extends Tag> type;
+	private final List<Tag> value;
+
+	public ListTag(String name, Class<? extends Tag> type, List<? extends Tag> value) {
+		super(name);
+		this.type = type;
+		this.value = Collections.unmodifiableList(value);
+	}
+
+	public Class<? extends Tag> getType() {
+		return this.type;
+	}
+
+	public List<Tag> getValue() {
+		return this.value;
+	}
+
+	public String toString() {
+		String name = getName();
+		String append = "";
+		if ((name != null) && (!name.equals(""))) {
+			append = new StringBuilder().append("(\"").append(getName()).append("\")").toString();
+		}
+		StringBuilder bldr = new StringBuilder();
+		bldr.append(new StringBuilder().append("TAG_List").append(append).append(": ").append(this.value.size()).append(" entries of type ").append(NBTUtils.getTypeName(this.type)).append("\r\n{\r\n").toString());
+
+		for (Tag t : this.value) {
+			bldr.append(new StringBuilder().append("   ").append(t.toString().replaceAll("\r\n", "\r\n   ")).append("\r\n").toString());
+		}
+
+		bldr.append("}");
+		return bldr.toString();
+	}
+}

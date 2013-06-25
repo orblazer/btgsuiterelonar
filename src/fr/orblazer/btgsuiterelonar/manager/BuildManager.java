@@ -3,6 +3,7 @@ package fr.orblazer.btgsuiterelonar.manager;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Map;
 import java.util.zip.GZIPInputStream;
 
 import org.bukkit.Location;
@@ -10,7 +11,13 @@ import org.bukkit.World;
 import org.bukkit.block.Block;
 
 import fr.orblazer.btgsuiterelonar.Main;
+import fr.orblazer.btgsuiterelonar.util.ByteArrayTag;
+import fr.orblazer.btgsuiterelonar.util.CompoundTag;
+import fr.orblazer.btgsuiterelonar.util.NBTInputStream;
 import fr.orblazer.btgsuiterelonar.util.Schematic;
+import fr.orblazer.btgsuiterelonar.util.ShortTag;
+import fr.orblazer.btgsuiterelonar.util.StringTag;
+import fr.orblazer.btgsuiterelonar.util.Tag;
 
 public class BuildManager {
 	public static BuildManager instances = new BuildManager();

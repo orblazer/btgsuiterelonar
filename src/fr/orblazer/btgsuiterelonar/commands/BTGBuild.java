@@ -1,5 +1,7 @@
 package fr.orblazer.btgsuiterelonar.commands;
 
+import java.io.File;
+
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -20,7 +22,14 @@ public class BTGBuild {
 
   			Player p = (Player)sender;
   			System.out.println(pl.plName + BuildManager.getInstance().listFile());
-  			BuildManager.getInstance().Build(p.getWorld(), p.getLocation(), )
+  			try {
+  				File f = new File("test.schematic");
+  			
+				BuildManager.getInstance().Build(p.getWorld(), p.getLocation(), BuildManager.getInstance().loadSchematic(f));
+			}
+  			catch (Exception e) {
+				e.printStackTrace();
+			}
 			return true;
   		}
   		return false;

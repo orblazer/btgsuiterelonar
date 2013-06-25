@@ -1,32 +1,23 @@
-/*    */ package com.sk89q.jnbt;
-/*    */ 
-/*    */ public final class IntTag extends Tag
-/*    */ {
-/*    */   private final int value;
-/*    */ 
-/*    */   public IntTag(String name, int value)
-/*    */   {
-/* 60 */     super(name);
-/* 61 */     this.value = value;
-/*    */   }
-/*    */ 
-/*    */   public Integer getValue()
-/*    */   {
-/* 66 */     return Integer.valueOf(this.value);
-/*    */   }
-/*    */ 
-/*    */   public String toString()
-/*    */   {
-/* 71 */     String name = getName();
-/* 72 */     String append = "";
-/* 73 */     if ((name != null) && (!name.equals(""))) {
-/* 74 */       append = "(\"" + getName() + "\")";
-/*    */     }
-/* 76 */     return "TAG_Int" + append + ": " + this.value;
-/*    */   }
-/*    */ }
+package fr.orblazer.btgsuiterelonar.util;
 
-/* Location:           C:\Users\orblazer\Desktop\Mes documents\Minecraft\serveur\Azael PvP\plugins\WorldEdit.jar
- * Qualified Name:     com.sk89q.jnbt.IntTag
- * JD-Core Version:    0.6.2
- */
+public final class IntTag extends Tag {
+	private final int value;
+
+	public IntTag(String name, int value) {
+		super(name);
+		this.value = value;
+	}
+
+	public Integer getValue() {
+		return Integer.valueOf(this.value);
+	}
+
+	public String toString() {
+		String name = getName();
+		String append = "";
+		if ((name != null) && (!name.equals(""))) {
+			append = "(\"" + getName() + "\")";
+		}
+		return "TAG_Int" + append + ": " + this.value;
+	}
+}
